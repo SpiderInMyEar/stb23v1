@@ -25,7 +25,7 @@ public class PostController {
         TestSTB stb = new TestSTB();
         return stb.loadFileXML();
     }
-
+/*
     @RequestMapping(value = "/xml", produces = MediaType.APPLICATION_XML_VALUE)
     public @ResponseBody STB getXML() {
         ArrayList<String> tels = new ArrayList<>();
@@ -37,4 +37,6 @@ public class PostController {
                         ));
         return stb;
     }
+
+ */
 }

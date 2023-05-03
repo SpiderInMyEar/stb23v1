@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:stb xmlns:p="http://univrouen.fr/stb23" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://univrouen.fr/stb23 stb23.tp1.xsd ">
+  <p:title>KitKatChenChin</p:title>
+  <p:description>The kitchen to rule them all</p:description>
+  <p:version>0.0</p:version>
+  <p:date>2001-01-01</p:date>
+  <p:client>
+    <p:entity>Good Inc</p:entity>
+    <p:person lastname="Nathan" gender="M.">Drake Nathan</p:person>
+    <p:mail>Uncharted@territory.cod</p:mail>
+    <p:tel>+33 0 04 34 21 45</p:tel>
+  </p:client>
+  <p:team>
+    <p:member>
+      <p:person lastname="Makel">DudeBro Mark</p:person>
+      <p:mail>Dododo@quelleBurn.com</p:mail>
+      <p:function>Cuisto de l'équipe</p:function>
+    </p:member>
+    <p:member>
+      <p:person lastname="Fiery">Guy Dude</p:person>
+      <p:mail>OnFire_ForFood@meals.com</p:mail>
+      <p:function>Fine bouche</p:function>
+    </p:member>
+  </p:team>
+  <p:features>
+    <p:feature name="Barbeque" number="0" section="19">
+      <p:description>Barbeq a 1000 degré</p:description>
+      <p:priority>10</p:priority>
+    </p:feature>
+  	<p:feature name="Hell kitchen" number="1" section="195">
+      <p:description>D'enfer la cuisine bro !</p:description>
+      <p:priority>6</p:priority>
+    </p:feature>
+  </p:features>
+</p:stb>
