@@ -3,28 +3,35 @@ package fr.univrouen.stb23v1.model;
 import jakarta.xml.bind.annotation.*;
 
 import java.io.Serializable;
+import java.util.Date;
 
 @XmlRootElement(name = "stb")
 @XmlAccessorType(XmlAccessType.NONE)
 public class STB implements Serializable {
     private static final long serialVersionUID = 1L;
-    @XmlAttribute
-    private Integer id;
     @XmlElement
     private String title;
     @XmlElement
-    private String published;
-    public STB(Integer id, String title, String published) {
+    private Double version;
+    @XmlElement
+    private Date date;
+    @XmlElement
+    private String description;
+    @XmlElement
+    private Client client;
+
+    public STB(Double ver, String title, Date date, String description,
+               Client client) {
         super();
-        this.id = id;
+        this.version = ver;
         this.title = title;
-        this.published = published;
+        this.date = date;
+        this.client = client;
     }
     public STB() {
     }
     @Override
     public String toString() {
-        return ("STB (" + id.toString() + ") du " + published
-                + "\n" + title + "\n");
+        return "TEST";
     }
 }

@@ -1,8 +1,14 @@
 package fr.univrouen.stb23v1.controllers;
+import fr.univrouen.stb23v1.model.Client;
+import fr.univrouen.stb23v1.model.Person;
 import fr.univrouen.stb23v1.model.STB;
 import fr.univrouen.stb23v1.model.TestSTB;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+
+import java.sql.Date;
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 @RestController
 public class PostController {
@@ -22,7 +28,13 @@ public class PostController {
 
     @RequestMapping(value = "/xml", produces = MediaType.APPLICATION_XML_VALUE)
     public @ResponseBody STB getXML() {
-        STB stb = new STB(123,"Test STB","2023-04-01T14:22:33");
+        ArrayList<String> tels = new ArrayList<>();
+        tels.add("000101245");
+        STB stb = new STB(0.1, "TestSTB", Date.valueOf(LocalDate.now()), "Test of an stb",
+                new Client("TestEntity",
+                        new Person("Mr", "Miller", "Martin"),
+                        new ArrayList<>(), tels
+                        ));
         return stb;
     }
 }
